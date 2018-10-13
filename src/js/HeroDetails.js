@@ -115,7 +115,7 @@ class HeroDetails extends Component {
     }
 
     getPlayer(id, callback) {
-        const playerURL = 'api/dota?q=player_from_playerID&id='+id;
+        const playerURL = 'https://dota_userguide_server.herokuapp.com/api/dota?q=player_from_playerID&id='+id;
         fetch(playerURL).then(function (response) {
             return response.json();
         }).then(function (player) {
@@ -127,7 +127,7 @@ class HeroDetails extends Component {
     }
 
     getMatch(id, callback) {
-        const matchURL = 'api/dota?q=match_from_matchID&id='+id;
+        const matchURL = 'https://dota_userguide_server.herokuapp.com/api/dota?q=match_from_matchID&id='+id;
         //console.log("Match ID = ", id)
         fetch(matchURL).then(function (response) {
             return response.json();
