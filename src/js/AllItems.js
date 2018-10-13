@@ -29,7 +29,7 @@ class AllItems extends Component {
     getitems() {
       const self = this;
 
-        fetch('https://dota_userguide_server.herokuapp.com/api/dota?q=items_recipe').then(function (response) {
+        fetch('https://dota-userguide-server.herokuapp.com/api/dota?q=items_recipe').then(function (response) {
             return response.json();
         }).then(function (itemStats) {
           self.setState({
@@ -42,7 +42,7 @@ class AllItems extends Component {
         });
 
 
-        fetch('https://dota_userguide_server.herokuapp.com/api/dota?q=items_others').then(function (response) {
+        fetch('https://dota-userguide-server.herokuapp.com/api/dota?q=items_others').then(function (response) {
             return response.json();
         }).then(function (itemStats) {
           self.setState({
@@ -54,7 +54,7 @@ class AllItems extends Component {
             console.log('Request failed due to ', error)
         });
 
-        fetch('https://dota_userguide_server.herokuapp.com/api/dota?q=items_others').then(function (response) {
+        fetch('https://dota-userguide-server.herokuapp.com/api/dota?q=items_others').then(function (response) {
             return response.json();
         }).then(function (itemStats) {
           self.setState({
