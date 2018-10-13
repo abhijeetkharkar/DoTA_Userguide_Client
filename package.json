@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "https://dota-userguide-server.herokuapp.com/",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "jquery": "^3.3.1",
